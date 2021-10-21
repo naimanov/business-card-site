@@ -1,6 +1,6 @@
 import React from 'react';
-import { useTypedSelector } from '../hooks/useTypedSelector';
-import ContactsInfo from '../components/Contacts/ContactsInfo';
+import { useTypedSelector } from '../../../hooks/useTypedSelector';
+import ContactsInfo from './ContactsInfo';
 
 function Contacts() {
   const personContacts = useTypedSelector(

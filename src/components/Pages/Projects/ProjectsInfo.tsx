@@ -5,12 +5,11 @@ interface ProjectsInfoProps {
 }
 
 function ProjectsInfo({ projectsInfo }: ProjectsInfoProps) {
-  console.log(projectsInfo);
   return (
-    <div className='page-container'>
+    <article className='page-container'>
       {projectsInfo.map((item) => {
         return (
-          <div>
+          <div key={item.title}>
             <p>
               <a className='project-link' href={item.url}>
                 {item.title}
@@ -20,7 +19,7 @@ function ProjectsInfo({ projectsInfo }: ProjectsInfoProps) {
           </div>
         );
       })}
-    </div>
+    </article>
   );
 }
 

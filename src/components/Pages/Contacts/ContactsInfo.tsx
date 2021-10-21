@@ -6,16 +6,16 @@ interface ContactsInfoProps {
 
 function ContactsInfo({ personContacts }: ContactsInfoProps) {
   return (
-    <div className='page-container'>
+    <article className='page-container'>
       {personContacts.map((item) => {
         return (
-          <div className='contacts-container'>
+          <div className='contacts-container' key={item.title}>
             <div className='contact-title'>{item.title}:</div>
             <div className='contact-value'>{item.value}</div>
           </div>
         );
       })}
-    </div>
+    </article>
   );
 }
 

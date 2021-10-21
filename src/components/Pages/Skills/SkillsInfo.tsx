@@ -6,18 +6,18 @@ interface SkillsInfoProps {
 
 function SkillsInfo({ personSkills }: SkillsInfoProps) {
   return (
-    <div className='page-container'>
+    <article className='page-container'>
       <ul>
         {personSkills.map((item) => {
           return (
-            <li className='skill-container'>
+            <li className='skill-container' key={item}>
               <div className='skill-marker'></div>
               {item}
             </li>
           );
         })}
       </ul>
-    </div>
+    </article>
   );
 }
 

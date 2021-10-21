@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Actions } from './store/actions';
 import { useDispatch } from 'react-redux';
 import Navbar from './components/Navbar/Navbar';
-import AboutMe from './pages/AboutMe';
-import Skills from './pages/Skills';
-import Projects from './pages/Projects';
-import Contacts from './pages/Contacts';
+import AboutMe from './components/Pages/AboutMe/AboutMe';
+import Skills from './components/Pages/Skills/Skills';
+import Projects from './components/Pages/Projects/Projects';
+import Contacts from './components/Pages/Contacts/Contacts';
 import Title from './components/Title/Title';
 import { data } from './data/mockData';
 
@@ -19,9 +19,9 @@ function App() {
 
   return (
     <Router>
-      <div className='main-section'>
+      <div className='wrapper'>
         <Title />
-        <div className='section'>
+        <div className='container'>
           <Navbar />
           <Switch>
             <Route exact path='/'>

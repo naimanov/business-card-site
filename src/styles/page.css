@@ -6,7 +6,7 @@
 .skill-container {
   padding-bottom: 0.5rem;
   display: flex;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 .skill-marker {

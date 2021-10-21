@@ -6,11 +6,11 @@ interface AboutMeInfoProps {
 
 function AboutMeInfo({ personInfo }: AboutMeInfoProps) {
   return (
-    <div className='page-container'>
+    <article className='page-container'>
       {personInfo.map((item) => {
         return <p key={item}>{item}</p>;
       })}
-    </div>
+    </article>
   );
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import { useTypedSelector } from '../hooks/useTypedSelector';
-import ProjectsInfo from '../components/Projects/ProjectsInfo';
+import { useTypedSelector } from '../../../hooks/useTypedSelector';
+import ProjectsInfo from './ProjectsInfo';
 
 function Projects() {
   const projectsInfo = useTypedSelector(
