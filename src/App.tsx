@@ -4,6 +4,7 @@ import { Actions } from './store/actions';
 import { useDispatch } from 'react-redux';
 import Navbar from './components/Navbar/Navbar';
 import AboutMe from './pages/AboutMe';
+import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contacts from './pages/Contacts';
 import Title from './components/Title/Title';
@@ -25,6 +26,9 @@ function App() {
           <Switch>
             <Route exact path='/'>
               <AboutMe />
+            </Route>
+            <Route path='/skills'>
+              <Skills />
             </Route>
             <Route path='/projects'>
               <Projects />

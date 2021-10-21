@@ -1,9 +1,9 @@
 import { createStore, combineReducers } from 'redux';
-import { productsReducer } from './personReducer';
+import { personReducer } from './personReducer';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 const rootReducer = combineReducers({
-  productsReducer,
+  personReducer,
 });
 
 export const store = createStore(rootReducer, composeWithDevTools());

@@ -5,6 +5,7 @@ import NavbarLink from './NavbarLink';
 function Navbar() {
   const navList = [
     { title: 'Обо мне', link: '/' },
+    { title: 'Навыки', link: '/skills' },
     { title: 'Проекты', link: '/projects' },
     { title: 'Контакты', link: '/contacts' },
   ];

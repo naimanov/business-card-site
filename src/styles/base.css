@@ -12,6 +12,16 @@ p {
   font-size: 20px;
   text-align: justify;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .main-section {
   width: 90vw;
   margin: 5rem auto;

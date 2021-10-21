@@ -4,14 +4,10 @@ import AboutMeInfo from '../components/AboutMe/AboutMeInfo';
 
 function AboutMe() {
   const personInfo = useTypedSelector(
-    (state) => state.productsReducer.person_info
+    (state) => state.personReducer.person_info
   );
 
-  return (
-    <div className='page-container'>
-      <AboutMeInfo personInfo={personInfo} />
-    </div>
-  );
+  return <AboutMeInfo personInfo={personInfo} />;
 }
 
 export default AboutMe;

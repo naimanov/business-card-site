@@ -1,3 +1,19 @@
 .page-container {
-  padding: 1rem;
+  padding: 0 1rem;
+  width: 75%;
+}
+
+.skill-container {
+  padding-bottom: 0.5rem;
+  display: flex;
+  font-size: 20px;
+}
+
+.skill-marker {
+  align-self: center;
+  background-color: #2caeba;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
 }

@@ -6,7 +6,7 @@ interface AboutMeInfoProps {
 
 function AboutMeInfo({ personInfo }: AboutMeInfoProps) {
   return (
-    <div>
+    <div className='page-container'>
       {personInfo.map((item) => {
         return <p key={item}>{item}</p>;
       })}

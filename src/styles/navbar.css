@@ -6,7 +6,6 @@
   flex-direction: column;
 }
 .navbar-link-container {
-  list-style-type: none;
   padding: 0.5rem 0;
 }
 .navbar-link {
