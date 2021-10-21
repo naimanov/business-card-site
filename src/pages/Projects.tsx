@@ -6,6 +6,7 @@ function Projects() {
   const projectsInfo = useTypedSelector(
     (state) => state.personReducer.person_projects
   );
+
   return <ProjectsInfo projectsInfo={projectsInfo} />;
 }
 

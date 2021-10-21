@@ -16,7 +16,7 @@ export const data = {
   ],
   person_projects: [
     {
-      title: 'Ститистика гонок Формулы 1',
+      title: 'Статистика гонок Формулы 1',
       url: 'https://f1-statistics-react-project.netlify.app',
       description:
         'сайт статистки гонок Формулы 1. При создании данного проекта я  использовал следующие технологии: HTML, CSS, Javascript, React. Данные статистики запрашиваются от Ergast Developer API',
@@ -34,12 +34,16 @@ export const data = {
       value: '8-999-999-999',
     },
     {
-      title: 'email',
+      title: 'Email',
       value: 'test@gmail.com',
     },
     {
-      title: 'skype',
-      value: 'skype login',
+      title: 'Skype',
+      value: 'skype_login',
+    },
+    {
+      title: 'GitHub',
+      value: 'https://github.com/naimanov	',
     },
   ],
 };

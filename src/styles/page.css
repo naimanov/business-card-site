@@ -22,3 +22,17 @@
   text-decoration: none;
   color: hsl(184, 77%, 34%);
 }
+
+.contacts-container {
+  display: flex;
+}
+
+.contact-title {
+  color: hsl(184, 77%, 34%);
+  width: 6rem;
+  margin: 0.5rem;
+}
+
+.contact-value {
+  margin: 0.5rem;
+}

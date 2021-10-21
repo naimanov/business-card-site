@@ -4,6 +4,7 @@ interface PersonState {
   person_info: any[];
   person_skills: any[];
   person_projects: any[];
+  person_contacts: any[];
 }
 
 interface PersonAction {
@@ -14,6 +15,7 @@ const initialState: PersonState = {
   person_info: [],
   person_skills: [],
   person_projects: [],
+  person_contacts: [],
 };
 
 export const personReducer = (
@@ -27,6 +29,7 @@ export const personReducer = (
         person_info: [...action.payload.person_info],
         person_skills: [...action.payload.person_skills],
         person_projects: [...action.payload.person_projects],
+        person_contacts: [...action.payload.person_contacts],
       };
     default:
       return state;

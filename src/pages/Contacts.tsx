@@ -1,11 +1,12 @@
 import React from 'react';
+import { useTypedSelector } from '../hooks/useTypedSelector';
+import ContactsInfo from '../components/Contacts/ContactsInfo';
 
 function Contacts() {
-  return (
-    <div>
-      <h2>Контакты</h2>
-    </div>
+  const personContacts = useTypedSelector(
+    (state) => state.personReducer.person_contacts
   );
+  return <ContactsInfo personContacts={personContacts} />;
 }
 
 export default Contacts;

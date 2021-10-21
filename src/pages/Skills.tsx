@@ -6,7 +6,7 @@ function Skills() {
   const personSkills = useTypedSelector(
     (state) => state.personReducer.person_skills
   );
-  console.log(personSkills);
+
   return <SkillsInfo personSkills={personSkills} />;
 }
 
