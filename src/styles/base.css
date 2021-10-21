@@ -1,0 +1,22 @@
+html {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3b4157;
+}
+
+.main-section {
+  width: 90vw;
+  margin: 5rem auto;
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: auto;
+}
+
+.section {
+  display: flex;
+}

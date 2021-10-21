@@ -1,0 +1,27 @@
+.navbar-container {
+  width: 25%;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+.navbar-link-container {
+  list-style-type: none;
+  padding: 0.5rem 0;
+}
+.navbar-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  padding: 0.25rem 2rem;
+  color: #3b4157;
+}
+.navbar-link:hover {
+  color: #2caeba;
+}
+.navbar-link-active {
+  color: #2caeba;
+  box-shadow: -2px 0 #2caeba;
+}
