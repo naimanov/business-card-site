@@ -17,3 +17,8 @@
   height: 10px;
   margin-right: 10px;
 }
+
+.project-link {
+  text-decoration: none;
+  color: hsl(184, 77%, 34%);
+}

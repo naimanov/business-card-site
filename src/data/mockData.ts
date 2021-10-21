@@ -14,4 +14,32 @@ export const data = {
     'Git',
     'Английский язык на уровне чтения документации',
   ],
+  person_projects: [
+    {
+      title: 'Ститистика гонок Формулы 1',
+      url: 'https://f1-statistics-react-project.netlify.app',
+      description:
+        'сайт статистки гонок Формулы 1. При создании данного проекта я  использовал следующие технологии: HTML, CSS, Javascript, React. Данные статистики запрашиваются от Ergast Developer API',
+    },
+    {
+      title: 'Электронный ежедневник',
+      url: 'https://diary-planner.netlify.app',
+      description:
+        'электронный ежедневник. При создании данного проекта я использовал следующие технологии: HTML, CSS(SCSS), Javascript, React, Redux. Аутентификация пользователей и сохранение данных реализованы с помощью Google Firebase. ',
+    },
+  ],
+  person_contacts: [
+    {
+      title: 'Телефон',
+      value: '8-999-999-999',
+    },
+    {
+      title: 'email',
+      value: 'test@gmail.com',
+    },
+    {
+      title: 'skype',
+      value: 'skype login',
+    },
+  ],
 };
