@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Actions } from './store/actions';
+import { useDispatch } from 'react-redux';
 import Navbar from './components/Navbar/Navbar';
 import AboutMe from './pages/AboutMe';
 import Projects from './pages/Projects';
 import Contacts from './pages/Contacts';
 import Title from './components/Title/Title';
+import { data } from './data/mockData';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch({ type: Actions.GET_PERSON_DATA, payload: data });
+  }, []);
+
   return (
     <Router>
       <div className='main-section'>

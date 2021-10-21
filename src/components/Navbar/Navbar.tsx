@@ -13,7 +13,9 @@ function Navbar() {
     <nav className='navbar-container'>
       <ul className='navbar'>
         {navList.map((item) => {
-          return <NavbarLink title={item.title} link={item.link} />;
+          return (
+            <NavbarLink title={item.title} key={item.title} link={item.link} />
+          );
         })}
       </ul>
     </nav>
