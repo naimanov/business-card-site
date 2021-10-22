@@ -5,6 +5,7 @@ interface PersonState {
   person_skills: any[];
   person_projects: any[];
   person_contacts: any[];
+  is_loading: boolean;
 }
 
 interface PersonAction {
@@ -16,6 +17,7 @@ const initialState: PersonState = {
   person_skills: [],
   person_projects: [],
   person_contacts: [],
+  is_loading: true,
 };
 
 export const personReducer = (
@@ -30,6 +32,7 @@ export const personReducer = (
         person_skills: [...action.payload.person_skills],
         person_projects: [...action.payload.person_projects],
         person_contacts: [...action.payload.person_contacts],
+        is_loading: false,
       };
     default:
       return state;
